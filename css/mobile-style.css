@@ -1,0 +1,92 @@
+body {
+    font-size: 12px;
+}
+
+.logo {
+    width: 17%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.site-navigation {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+}
+
+.site-navigation li {
+    width: 100%;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-weight: bold;
+}
+
+.inscription{
+    padding-top: 10%;
+    padding-bottom:12%;
+}
+
+.inscription img {
+    width: 59%;
+    height: 0;
+}
+
+.phrase:first-of-type {
+    padding: 0 82px;
+    font-size: 15px;
+}
+
+.phrase:last-of-type {
+    padding-top: 3%;
+    padding-bottom: 7%;
+    font-size: 11px;
+}
+
+.advantages-item-content h3 {
+    font-size: 14px;
+}
+
+.advantages-item-content h4 {
+    font-size: 16px;
+}
+
+.advantages-item-content span {
+    font-size: 12px;
+}
+
+.advantages-item-content p {
+    font-size: 12px;
+}
+
+.interest-item h3 {
+    font-size: 23px;
+}
+
+.hotels-filters h2 {
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.options {
+    font-size: 11px;
+}
+
+.options li:not(:last-child) {
+    margin: 0 0 5px;
+}
+
+.interest-item p {
+    width: 68%;
+    font-size: 12px;
+}
+
+.search-hotel {
+    padding: 30px 126px;
+}
+
+.search-form {
+    padding: 50px 50px;
+}

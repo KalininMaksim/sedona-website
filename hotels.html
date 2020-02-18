@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    
+    <title>
+      Sedona | Hotels
+    </title>
+
+    <link rel="stylesheet"
+          href="css/normalize.css">
+
+    <link rel="stylesheet" 
+          href="css/style_hotels.css">
+
+    <link rel="stylesheet" 
+          href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          media="screen and (max-width: 600px)"
+          href="css/mobile-style.css">
+
+  </head>
+
+  <body class="inner-page hotels">
+    <div class="main-container">
+      <header class="main-header"></header>
+
+      <div class="hotels-filters"
+          id="hotels-filters">
+          <form class="filters row"
+                action="/filter"
+                method="post">
+            <div class="filter-options column column-double">
+              <fieldset class="options">
+                <h2 class="filter-title">
+                  Инфраструктура:
+                </h2>
+
+                <ul>
+                  <li>
+                    <input class="form-checkbox"
+                           id="check-f-1"
+                           type="checkbox" 
+                           name="facilities" 
+                           value="val-1" 
+                           checked>
+
+                    <label class="form-label"
+                           for="check-f-1">
+                      Бассейн
+                    </label>
+                  </li>
+
+                  <li>
+                    <input class="form-checkbox" 
+                           id="check-f-2" 
+                           type="checkbox" 
+                           name="facilities" 
+                           value="val-2">
+
+                    <label class="form-label"
+                           for="check-f-2">
+                      Парковка
+                    </label>
+                  </li>
+
+                  <li>
+                    <input class="form-checkbox"
+                           id="check-f-3" 
+                           type="checkbox" 
+                           name="facilities" 
+                           value="val-3">
+
+                    <label class="form-label" 
+                           for="check-f-3">
+                      Wi-Fi
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <fieldset class="options">
+                <h2 class="filter-title">
+                  Тип жилья:
+                </h2>
+
+                <ul>
+                  <li>
+                    <input class="form-checkbox"
+                           id="check-h-1" 
+                           type="checkbox" 
+                           name="housing" 
+                           value="val-1" 
+                           checked>
+
+                    <label class="form-label" 
+                           for="check-h-1">
+                      Гостиница
+                    </label>
+                  </li>
+
+                  <li>
+                    <input class="form-checkbox"
+                           id="check-h-2" 
+                           type="checkbox" 
+                           name="housing" 
+                           value="val-2" 
+                           checked>
+
+                    <label class="form-label" 
+                           for="check-h-2">
+                      Мотель
+                    </label>
+                  </li>
+
+                  <li>
+                    <input class="form-checkbox" 
+                           id="check-h-3" 
+                           type="checkbox" 
+                           name="housing" 
+                           value="val-3" 
+                           checked>
+
+                    <label class="form-label" 
+                           for="check-h-3">
+                      Апартаменты
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+    
+            <div class="filter-cost column">
+              <h2 class="filter-title">
+                Стоимость в&nbsp;сутки (Р):
+              </h2>
+
+              <div class="cost-control" 
+                   id="cost-control">
+                <div class="cost-group">
+                  <div class="cost">
+                    <label >
+                      от                    
+                    </label>
+                    <input class="cost-input cost-input-min" 
+                           type="text" 
+                           name="cost-from" 
+                           value="0">
+                  </div>
+                  <div class="cost">
+                    <label for="cost-to">
+                      до
+                    </label>
+                    <input class="cost-input cost-input-max" 
+                           type="text" 
+                           name="cost-to" 
+                           value="3000">
+                  </div>
+                </div>
+
+                <div class="range">
+                  <div class="scale"> 
+                    <button class="scale-slider scale-slider-min" 
+                            type="button" 
+                            tabindex="-1">
+                    </button>
+
+                    <button class="scale-slider scale-slider-max" 
+                            type="button" 
+                            tabindex="-1">
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn btn-light"
+                      type="submit">
+                Показать
+              </button>
+            </div>
+          </form>
+      </div>
+
+      <div class="catalog">
+        <section class="catalog-header catalog-row">
+          <h2 class="catalog-column-left">
+            Найдено: 3
+          </h2>
+
+          <div class="sort-type catalog-column-middle">
+            <div class="sort-label">
+              Сортировка:
+            </div>
+
+            <ul>
+              <li class="active">
+                по&nbsp;цене
+              </li>
+
+              <li>
+                по&nbsp;типу
+              </li>
+
+              <li>
+                по&nbsp;рейтингу
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="sort-order catalog-column-right">
+            <li class="icon icon-up-dir">
+              ▲
+            </li>
+
+            <li class="icon icon-down-dir icon-active">
+              ▼
+            </li>
+          </div>  
+        </section>
+
+        <main class="catalog-content">
+          <section class="catalog-row">
+            <div class="hotel-thumb catalog-column-left">
+              <img src="img/hotels/img3.png"
+                   width="135" 
+                   height="90" 
+                   alt="изображение Amara Resort Spa">
+            </div>
+
+            <div class="hotel-info catalog-column-middle">
+              <h2 class="hotel-title">
+                <a href="#">
+                  Amara Resort &amp; Spa
+                </a>
+              </h2>
+              
+              <div class="hotel-action-span">              
+                <span>
+                  Гостиница
+                </span>
+
+                <span>
+                  ОТ 3500 Р.
+                </span> 
+              </div>
+
+              <div class="hotel-action-button">
+                <a href="#" 
+                   class="btn">
+                  Подробнее
+                </a>
+
+                <a href="#" 
+                  class="btn btn-order">
+                  Забронировать
+                </a>
+              </div>
+            </div>
+
+            <div class="rating catalog-column-right">
+              <div class="ratings-stars"
+                   data-rating="4">
+              </div>
+
+              <div class="rating-value">
+                  Рейтинг:
+                <span itemprop="ratingValue">
+                  8,5
+                </span>
+              </div>
+            </div>
+          </section>
+
+          <section class="catalog-row">
+            <div class="hotel-thumb catalog-column-left">
+              <img src="img/hotels/img2.png" 
+                   width="135" 
+                   height="90" 
+                   alt="изображение Desert Quail Inn">
+            </div>
+
+            <div class="hotel-info catalog-column-middle">
+              <h2 class="hotel-title">
+                <a href="#">
+                  Desert Quail Inn
+                </a>
+              </h2>
+
+              <div class="hotel-action-span">
+                <span>
+                  Мотель
+                </span>
+
+                <span>
+                  ОТ 2000 Р.
+                </span>
+              </div>
+
+              <div class="hotel-action-button"> 
+                <a href="#" 
+                   class="btn">
+                  Подробнее
+                </a>
+
+                <a href="#" 
+                   class="btn btn-order">
+                  Забронировать
+                </a>              
+              </div>
+            </div>
+
+            <div class="rating catalog-column-right">
+              <div class="ratings-stars" 
+                  data-rating="2">
+              </div>
+
+              <div class="rating-value">
+                Рейтинг:
+                <span itemprop="ratingValue">
+                  8,9
+                </span>
+              </div>
+            </div>
+          </section>
+
+          <section class="catalog-row">
+            <div class="hotel-thumb catalog-column-left" 
+                 href="#">
+              <img src="img/hotels/img1.png" 
+                   width="135" 
+                   height="90" 
+                   alt="изображение Villas at Poco Diablo">
+            </div>
+
+            <div class="hotel-info catalog-column-middle">
+              <h2 class="hotel-title">
+                <a href="#">
+                  Villas at Poco Diablo
+                </a>
+              </h2>
+
+              <div class="hotel-action-span">
+                <span>
+                  Апартаменты
+                </span>
+
+                <span>
+                  ОТ 4000 Р.
+                </span>  
+              </div>
+
+              <div class="hotel-action-button">
+                <a href="#"
+                   class="btn">
+                  Подробнее
+                </a> 
+
+                <a href="#" 
+                  class="btn btn-order">
+                  Забронировать
+                </a>
+              </div>
+            </div>
+
+            <div class="rating catalog-column-right">
+              <div class="ratings-stars" 
+                   data-rating="3">
+              </div>
+
+              <div class="rating-value">
+                Рейтинг:
+                <span itemprop="ratingValue">
+                  9,2
+                </span>
+              </div>
+            </div>          
+          </section>
+        </main>
+      </div>
+
+      <footer class="main-footer"></footer>
+    </div>
+
+    <script src="app/app.add.header-footer.js"></script>
+  </body>
+
+</html>

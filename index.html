@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" 
+        content="ie=edge">
+
+  <title>
+    Sedona
+  </title>
+
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" 
+        rel="stylesheet">
+
+  <link rel="stylesheet" 
+        href="css/normalize.css">
+
+  <link rel="stylesheet" 
+        href="css/style.css">
+
+  <link rel="stylesheet"
+        media="screen and (max-width: 600px)"
+        href="css/mobile-style.css">
+</head>
+
+<body>
+  <div class="context-container">
+    <header class="main-header"></header>
+
+    <div class="preview">
+      <div class="inscription">
+        <img src="img/index/inscription.png">
+      </div>
+    </div>
+
+    <main class="substantive-content">
+        <h2 class="visually-hidden">
+          Преимуществса
+        </h2>
+
+        <p class="phrase">
+          Седона ⎼ небольшой городок в Аризоне,
+          заслуживающий большего!
+        </p>
+
+        <p class="phrase">
+          Рассмотрим 5 причин,
+          по которым седона круче,
+          чем Гранд каньон!!!
+        </p>
+
+        <section class="advantages">
+          <ul class="advantages-list">
+            <li class="advantages-item advantages-item-expand">
+              <div class="advantages-item-holder">
+                <div class="advantages-item-content">
+                  <h3>
+                    Настоящий городок
+                  </h3>
+
+                  <span>
+                    –№1–
+                  </span>
+
+                  <p>
+                    Седона – не аттракцион для туристов,
+                    там течет своя жизнь
+                  </p>
+                </div>
+
+                <div class="preview preview-town"></div>
+              </div>
+
+              <ul class="advantages-item-list">
+                <li class="advantages-item-content">
+                  <img src="img/index/icon-1.png" 
+                       alt="housing">
+
+                  <h4>
+                    Жилье
+                  </h4>
+
+                  <p>
+                    Рекомендуем пожить в настоящем
+                    мотеле, все как в кино!
+                  </p>
+                </li>
+
+                <li class="advantages-item-content">
+                  <img src="img/index/icon-3.png" 
+                       alt="meal">
+
+                  <h4>
+                    Еда
+                  </h4>
+
+                  <p>
+                    Всегда заказывайте фирменный бургер,
+                    вы не разочаруетесь!
+                  </p>
+                </li>
+
+                <li class="advantages-item-content">
+                  <img src="img/index/icon-2.png"
+                       alt="souvenir">
+
+                  <h4>
+                    Сувениры
+                  </h4>
+
+                  <p>
+                    Не только китайского но и
+                    местного производства!
+                  </p>
+                </li>
+              </ul>
+            </li>
+
+            <li class="advantages-item advantages-item-expand">
+              <div class="advantages-item-holder">
+                <div class="preview preview-bridge"></div>
+
+                <div class="advantage-item-context advantages-item-content">
+                  <h3>
+                    Там есть мост дьявола
+                  </h3>
+
+                  <span>
+                    -№2-
+                  </span>
+
+                  <p>
+                    Да, по нему можно пройти!
+                    Если конечно
+                    вы осмелитесь
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="advantages-item advantages-item-content">
+              <h3>
+                Небольшая площадь
+              </h3>
+
+              <span>
+                -№3-
+              </span>
+
+              <p>
+                Все достопримечательности
+                находятся очень близко
+              </p>
+            </li>
+
+            <li class="advantages-item advantages-item-content">
+              <h3>
+                Красивая дорога
+              </h3>
+
+              <span>
+                -№4-
+              </span>
+
+              <p>
+                Ехать в седону из Лас-вегаса
+                совсем не скучно!
+              </p>
+            </li>
+
+            <li class="advantages-item advantages-item-content">
+              <h3>
+                Мало туристов
+              </h3>
+
+              <span>
+                -№5-
+              </span>
+
+              <p>
+                Большинство едет в гранд
+                каньон и толпится там
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="interest-block">
+          <div class="interest-item ">
+            <h3>
+              Заинтересовались?
+            </h3>
+
+            <p>
+              Укажите предполагаемые даты поездки,
+              и мы покажем вам лучшие предложения
+              гостиниц в седоне
+            </p>
+
+            <button class="search-hotel" 
+                    onclick="showForm()"
+                    href='#'>
+              Поиск гостиницы в седоне
+            </button>
+          </div>
+        </section>
+
+        <section class="map">
+          <form class="search-form search-form-invisible"
+                action="#"
+                method="post">
+            <div class="entry">
+              <label for="date-of-entry">
+                Дата заезда:
+
+                <a class="date-of-entry-cal" 
+                   href="#">
+                  <span class="icon-calendar"></span>
+                </a>
+              </label>
+
+              <input type="text" 
+                     id="date-of-entry" 
+                     class="icon-calendar" 
+                     value="24 апреля 2018">
+            </div>
+
+            <div class="departure">
+              <label for="date-of-departure">
+                Дата выезда:
+
+                <a class="date-of-departure-cal" 
+                   href="#">
+                  <span class="icon-calendar"></span>
+                </a>
+              </label>
+
+              <input type="text" 
+                     id="date-of-departure" 
+                     class="icon-calendar"
+                     value="4 июля 2018">
+            </div>
+
+            <div class="amount">
+              <div class="amount-adult">
+                <label>
+                  Взрослые:
+                </label>
+                
+                <div class="collapse">
+                  <button type="button"
+                          name="minus-adult">                          
+                      <span class="icon-minus">
+                          <img src="img/index/minus.png" 
+                               alt="minus">
+                      </span>
+                  </button>
+
+                  <input type="text"
+                         name="amount-of-adults" 
+                         value="2">
+
+                  <button type="button"
+                          name="plus-adult">
+                    <span class="icon-plus">
+                      <img src="img/index/plus.png"
+                           alt="plus">
+                    </span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="amount-children">
+                <label>
+                  Дети:
+                </label>
+
+                <div class="collapse">
+                  <button type="button"
+                          name="minus-children">
+                    <span class="icon-minus">
+                      <img src="img/index/minus.png"
+                           alt="minus">
+                    </span>
+                  </button>
+
+                  <input type="text" 
+                         name="amount-of-children" 
+                         value="0">
+
+                  <button type="button" 
+                          name="plus-children">
+                    <span class="icon-plus">
+                      <img src="img/index/plus.png" 
+                           alt="plus">
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <button class="search-btn" 
+                    type="submit">
+              Найти
+            </button>
+          </form>
+
+          <iframe src="https://is.gd/3w518p" 
+                  allowfullscreen>
+          </iframe>
+        </section>
+
+        <footer class="main-footer"></footer>
+    </main>
+  </div>
+
+  <script src="app/app.add.header-footer.js"></script>
+
+  <script src="app/app_form.js"></script>
+</body>
